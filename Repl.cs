@@ -6,25 +6,6 @@ using Microsoft.CodeAnalysis;
 using Microsoft.CodeAnalysis.CSharp;
 using Microsoft.CodeAnalysis.CSharp.Syntax;
 
-/**
-
-GC.GetTotalMemory(false)
-
-new DirectoryInfo(".")
-using System.IO;
-
-new DirectoryInfo(".").GetF
-string.Join("  ", new DirectoryInfo(".").GetFiles("*.cs").Select(f => $"{f.Name} ({f.Length} bytes)"))
-
-FileInfo[] Files(string pattern) => new DirectoryInfo(".").GetFiles(pattern);
-string.Join("  ", Files("*.cs").Select(f => $"{f.Name} ({f.Length} bytes)"))
-
-"Total file size: " + Files("*.cs").Select(f => f.Length).Sum() + " bytes"
-
-var p="Primes:";int m,n=2;for(;n<1e2;m=m<2?n:n%m>0?m-1:n++)p+=m<2?" "+n:"";p
-
- */
-
 namespace Scripting
 {
     class Repl
